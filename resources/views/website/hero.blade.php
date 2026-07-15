@@ -51,7 +51,7 @@
 
             <!-- Small Heading -->
 
-            <p class="text-sm font-medium uppercase tracking-widest text-white/60 mb-8 mt-4">
+            <p class="text-sm font-medium uppercase tracking-widest text-white/60 mb-4 mt-4">
 
                 Full-Service Business Brokerage
 
