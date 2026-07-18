@@ -53,4 +53,32 @@ class WebsiteController extends Controller
         )
     );
 }
+
+public function show(Listing $listing)
+{
+    $listing->load([
+        'category',
+        'files',
+    ]);
+
+    return view(
+        'website.listing-details',
+        compact('listing')
+    );
+}
+
+public function buyerService()
+{
+    return view('website.services.buyer');
+}
+
+public function sellerService()
+{
+    return view('website.services.seller');
+}
+
+public function appraisalService()
+{
+    return view('website.services.appraisal');
+}
 }

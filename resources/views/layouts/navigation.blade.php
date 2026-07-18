@@ -70,163 +70,184 @@
          Testimonials
       </a>
 
-      <a href="#contact"
-   class="relative px-4 py-2 text-sm font-medium text-white/70 hover:text-white transition-colors rounded-lg hover:bg-white/5">
-    Contact
-</a>
+       <a href="#contact" class="relative px-4 py-2 text-sm font-medium text-white/70 hover:text-white transition-colors rounded-lg hover:bg-white/5">
+        Contact
+       </a>
     </div>
 
-    <div class="hidden lg:flex lg:flex-1 lg:justify-end lg:gap-x-3">
-        
-       <!-- <button
-    type="button"
-    onclick="document.getElementById('valuation').scrollIntoView({ behavior: 'smooth' })"
-    class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium transition-all
-    disabled:pointer-events-none disabled:opacity-50
-    h-8 rounded-md gap-1.5 px-3
-    text-white/70 hover:text-white hover:bg-white/10
-    border border-white/20">
+   <div class="hidden lg:flex lg:flex-1 lg:justify-end lg:gap-x-3">
 
-    Free Valuation
+    @guest
 
-</button> -->
+        <a
+            href="{{ route('login') }}"
+            class="inline-flex items-center justify-center h-10 px-5 rounded-lg
+                   border border-white/20 text-white/80
+                   hover:bg-white/10 hover:text-white transition">
 
-          <!-- <form method="POST" action="{{ route('logout') }}">
+            Login
+
+        </a>
+
+        <a
+            href="{{ route('register') }}"
+            class="inline-flex items-center justify-center h-10 px-5 rounded-lg
+                   bg-[#002868] hover:bg-[#00184d]
+                   text-white shadow-lg transition">
+
+            Sign Up
+
+        </a>
+
+    @endguest
+
+
+    @auth
+
+        <div class="relative" id="profileDropdown">
+
+            <button
+                id="profileButton"
+                type="button"
+                class="flex items-center gap-3 px-3 py-2 rounded-lg hover:bg-white/10 transition">
+
+                <div
+                    class="w-9 h-9 rounded-full bg-[#002868]
+                           flex items-center justify-center
+                           text-white font-semibold">
+
+                    {{ strtoupper(substr(Auth::user()->name,0,1)) }}
+
+                </div>
+
+                <div class="hidden xl:block text-left">
+
+                    <p class="text-sm text-white font-medium">
+
+                        {{ Auth::user()->name }}
+
+                    </p>
+
+                    <p class="text-xs text-white/50">
+
+                        {{ Auth::user()->email }}
+
+                    </p>
+
+                </div>
+
+                <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="w-4 h-4 text-white/60"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor">
+
+                    <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="m6 9 6 6 6-6"/>
+
+                </svg>
+
+            </button>
+
+
+            <div
+                id="profileMenu"
+                class="hidden absolute right-0 mt-3 w-60
+                       rounded-xl bg-white shadow-xl
+                       border border-gray-200 overflow-hidden">
+
+                <div class="px-4 py-4 border-b">
+
+                    <p class="font-semibold text-gray-900">
+
+                        {{ Auth::user()->name }}
+
+                    </p>
+
+                    <p class="text-sm text-gray-500">
+
+                        {{ Auth::user()->email }}
+
+                    </p>
+
+                </div>
+
+                @if(Auth::user()->role === 'admin')
+
+                    <a
+                        href="{{ route('admin.dashboard') }}"
+                        class="block px-4 py-3 text-sm hover:bg-gray-100">
+
+                        Admin Dashboard
+
+                    </a>
+
+                @endif
+
+                <form method="POST" action="{{ route('logout') }}">
+
                     @csrf
 
                     <button
                         type="submit"
-                        class="bg-[#BF0A30] hover:bg-[#a00828] text-white shadow-lg px-3  h-8 rounded-lg transition">
+                        class="w-full text-left px-4 py-3
+                               text-sm text-red-600
+                               hover:bg-red-50">
+
                         Logout
+
                     </button>
-                </form> -->
 
-                <div class="relative" id="profileDropdown">
+                </form>
 
-    <button
-        id="profileButton"
-        type="button"
-        class="flex items-center gap-3 px-3 py-2 rounded-lg hover:bg-white/10 transition">
-
-        <!-- Avatar -->
-
-        <div class="w-9 h-9 rounded-full bg-[#002868] flex items-center justify-center text-white font-semibold">
-
-            {{ strtoupper(substr(Auth::user()->name,0,1)) }}
+            </div>
 
         </div>
 
-        <div class="hidden xl:block text-left">
-
-            <p class="text-sm text-white font-medium">
-
-                {{ Auth::user()->name }}
-
-            </p>
-
-            <p class="text-xs text-white/50">
-
-                 {{ Auth::user()->email }}
-
-            </p>
-
-        </div>
-
-        <svg xmlns="http://www.w3.org/2000/svg"
-             class="w-4 h-4 text-white/60"
-             fill="none"
-             viewBox="0 0 24 24"
-             stroke="currentColor">
-
-            <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="m6 9 6 6 6-6"/>
-
-        </svg>
-
-    </button>
-
-    <!-- Dropdown -->
-
-    <div id="profileMenu"
-         class="hidden absolute right-0 mt-3 w-56 rounded-xl bg-white shadow-xl border border-gray-200 overflow-hidden">
-
-        <div class="px-4 py-3 border-b">
-
-            <p class="font-semibold text-gray-900">
-
-                {{ Auth::user()->name }}
-
-            </p>
-
-            <p class="text-sm text-gray-500">
-
-                {{ Auth::user()->email }}
-
-            </p>
-
-        </div>
-
-      
-
-       @if(Auth::user()->role == 'admin')
-
-<a
-    href="{{ route('admin.dashboard') }}"
-    class="block px-4 py-3 text-sm hover:bg-gray-100">
-
-    Admin Dashboard
-
-</a>
-
-@endif
-
-        <form method="POST" action="{{ route('logout') }}">
-
-            @csrf
-
-            <button
-                type="submit"
-                class="w-full text-left px-4 py-3 text-sm text-red-600 hover:bg-red-50 transition">
-
-                Logout
-
-            </button>
-
-        </form>
-
-    </div>
+    @endauth
 
 </div>
-
     </div>
 </nav>
 
 <script>
 
-const profileButton = document.getElementById("profileButton");
+document.addEventListener("DOMContentLoaded", function () {
 
-const profileMenu = document.getElementById("profileMenu");
+    const profileButton = document.getElementById("profileButton");
+    const profileMenu = document.getElementById("profileMenu");
+    const profileDropdown = document.getElementById("profileDropdown");
 
-profileButton.addEventListener("click", function () {
+    if(profileButton){
 
-    profileMenu.classList.toggle("hidden");
+        profileButton.addEventListener("click", function(e){
 
-});
+            e.stopPropagation();
 
-document.addEventListener("click", function(e){
+            profileMenu.classList.toggle("hidden");
 
-    if(!document.getElementById("profileDropdown").contains(e.target)){
+        });
 
-        profileMenu.classList.add("hidden");
+        document.addEventListener("click", function(e){
+
+            if(!profileDropdown.contains(e.target)){
+
+                profileMenu.classList.add("hidden");
+
+            }
+
+        });
 
     }
 
 });
 
 </script>
+
 </header>
 
 

@@ -169,7 +169,7 @@
 
     <!-- CTA -->
 
-    <div class="mt-8">
+    <!-- <div class="mt-8">
 
        <button data-slot="button"
         class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-lg text-sm font-semibold transition-all disabled:pointer-events-none disabled:opacity-50
@@ -187,7 +187,7 @@
          </svg>
          </button>
 
-    </div>
+    </div> -->
 
 </div>
 

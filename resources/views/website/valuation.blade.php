@@ -156,7 +156,7 @@
 
                 <!-- CTA Button -->
 
-                <div class="mt-8">
+                <!-- <div class="mt-8">
 
                 <button data slot="button" class="inline-flex text-white items-center justify-center gap-2 whitespace-nowrap text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive text-primary-foreground h-10 rounded-md px-6 has-[>svg]:px-4 bg-[#BF0A30] hover:bg-[#a00828] group"
                 fdprocessedid="lq7x2s">
@@ -179,7 +179,7 @@
                         </svg>
                      </button>
 
-                </div>
+                </div> -->
             </div>
 
             <!-- RIGHT COLUMN STARTS HERE -->

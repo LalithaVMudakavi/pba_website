@@ -162,58 +162,69 @@
             <div class="mt-6 sm:mt-10 flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4">
 
                 <!-- Call Button -->
+<a
+    href="tel:+12673917642"
+    class="group inline-flex items-center justify-center gap-2
+           whitespace-nowrap text-sm font-medium
+           h-10 rounded-md px-6
+           w-full sm:w-auto
+           bg-[#BF0A30]
+           hover:bg-[#a00828]
+           text-white
+           transition-all">
 
-                <button data-slot="button" class="inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium transition-all 
-                        disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 
-                        outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 
-                        aria-invalid:border-destructive h-10 rounded-md px-6 has-[>svg]:px-4 w-full sm:w-auto bg-[#BF0A30] hover:bg-[#a00828] text-white group"
-                        fdprocessedid="wyag0r">
-                    <svg xmlns="http://www.w3.org/2000/svg"
-                         width="24"
-                         height="24"
-                         viewBox="0 0 24 24"
-                         fill="none"
-                         stroke="currentColor"
-                         stroke-width="2"
-                         stroke-linecap="round"
-                         stroke-linejoin="round"
-                         class="lucide lucide-phone mr-2 h-4 w-4" aria-hidden="true">
+    <svg xmlns="http://www.w3.org/2000/svg"
+         width="24"
+         height="24"
+         viewBox="0 0 24 24"
+         fill="none"
+         stroke="currentColor"
+         stroke-width="2"
+         stroke-linecap="round"
+         stroke-linejoin="round"
+         class="w-4 h-4">
 
-                        <path d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384"></path>
+        <path d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384"/>
 
-                    </svg>
+    </svg>
 
-                    Call (267) 391-7642
-                </button>
+    Call (267) 391-7642
+
+</a>
 
 
                 <!-- Listings Button -->
 
-                 <button data-slot="button" class="inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium transition-all 
-                         disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 
-                         outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40
-                         aria-invalid:border-destructive border bg-background shadow-xs hover:text-accent-foreground dark:bg-input/30 dark:border-input dark:hover:bg-input/50 h-10 rounded-md 
-                         px-6 has-[>svg]:px-4 w-full sm:w-auto border-white/30 text-white hover:bg-white/10"
-                         fdprocessedid="uqa0khj">
+                <a
+    href="#listings"
+    class="group inline-flex items-center justify-center gap-2
+           whitespace-nowrap text-sm font-medium
+           h-10 rounded-md px-6
+           w-full sm:w-auto
+           border border-white/30
+           text-white
+           hover:bg-white/10
+           transition-all">
 
-                         View Our Listings
+    View Our Listings
 
-                    <svg xmlns="http://www.w3.org/2000/svg"
-                         width="24"
-                         height="24"
-                         viewBox="0 0 24 24"
-                         fill="none"
-                         stroke="currentColor"
-                         stroke-width="2"
-                         stroke-linecap="round"
-                         stroke-linejoin="round"
-                         class="lucide lucide-arrow-right ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" aria-hidden="true">
+    <svg xmlns="http://www.w3.org/2000/svg"
+         width="24"
+         height="24"
+         viewBox="0 0 24 24"
+         fill="none"
+         stroke="currentColor"
+         stroke-width="2"
+         stroke-linecap="round"
+         stroke-linejoin="round"
+         class="w-4 h-4 transition-transform group-hover:translate-x-1">
 
-                        <path d="M5 12h14"></path>
-                        <path d="m12 5 7 7-7 7"></path>
-                    </svg>
+        <path d="M5 12h14"/>
+        <path d="m12 5 7 7-7 7"/>
 
-                </button>
+    </svg>
+
+</a>
             </div>
 
                         <!-- Bottom Statistics -->
