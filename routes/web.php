@@ -17,20 +17,11 @@ use App\Http\Controllers\Admin\ListingFileController;
 
 Route::get('/', [WebsiteController::class, 'index'])->name('home');
 
-Route::get('/about', [WebsiteController::class, 'about'])->name('about');
+Route::get('/about', [WebsiteController::class, 'about'])
+    ->name('about');
 
-Route::get('/listings', [WebsiteController::class, 'listings'])->name('listings');
-
-Route::get('/listings/{listing}', [WebsiteController::class, 'show'])->name('listings.show');
-
-Route::get('/listings/{listing}', [WebsiteController::class, 'show'])
-    ->name('listings.show');
-
-Route::get('/testimonials', [WebsiteController::class, 'testimonials'])->name('testimonials');
-
-Route::get('/contact', [WebsiteController::class, 'contact'])->name('contact');
-
-Route::get('/services.index', [WebsiteController::class, 'services'])->name('services.index');
+Route::get('/services', [WebsiteController::class, 'services'])
+    ->name('services');
 
 Route::get('/services/buyer', [WebsiteController::class, 'buyerService'])
     ->name('services.buyer');
@@ -40,6 +31,24 @@ Route::get('/services/seller', [WebsiteController::class, 'sellerService'])
 
 Route::get('/services/appraisal', [WebsiteController::class, 'appraisalService'])
     ->name('services.appraisal');
+
+Route::get('/listings', [WebsiteController::class, 'listings'])
+    ->name('listings');
+
+Route::get('/listings/{listing}', [WebsiteController::class, 'show'])
+    ->name('listings.show');
+
+Route::get('/valuation', [WebsiteController::class, 'valuation'])
+    ->name('valuation');
+
+Route::get('/testimonials', [WebsiteController::class, 'testimonials'])
+    ->name('testimonials');
+
+Route::get('/process', [WebsiteController::class, 'process'])
+    ->name('process');
+
+Route::get('/contact', [WebsiteController::class, 'contact'])
+    ->name('contact');
 
 /*
 |--------------------------------------------------------------------------

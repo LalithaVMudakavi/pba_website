@@ -1,6 +1,6 @@
 
 
-<section id="about" class="py-24 bg-gray-50 border-t border-gray-200 scroll-mt-16">
+<section class="py-24 bg-gray-50 border-t border-gray-200">
 
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 

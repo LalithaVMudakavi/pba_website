@@ -269,25 +269,6 @@ $documents = $listing->files->reject(function ($file) {
 
             <div class="flex flex-wrap gap-4 mt-8">
 
-                <a
-                    href="#contact"
-                    class="inline-flex
-                           items-center
-                           justify-center
-                           px-6
-                           py-3
-                           rounded-xl
-                           bg-[#002868]
-                           hover:bg-[#00184d]
-                           text-white
-                           font-semibold
-                           shadow-lg
-                           transition">
-
-                    Contact Broker
-
-                </a>
-
                 <button
     type="button"
     onclick="openInquiryModal()"
@@ -996,49 +977,7 @@ $documents = $listing->files->reject(function ($file) {
 
                         </div>
 
-                        <!-- Buttons -->
-
-                        <div class="flex flex-wrap gap-4">
-
-                            <a
-                                href="tel:+12673917642"
-                                class="flex-1 min-w-[180px]
-                                       text-center
-                                       px-6
-                                       py-4
-                                       rounded-xl
-                                       bg-white
-                                       text-[#002868]
-                                       font-semibold
-                                       hover:bg-gray-100
-                                       transition">
-
-                                Contact Broker
-
-                            </a>
-
-                             <button
-    type="button"
-    onclick="openInquiryModal()"
-                                class="flex-1 min-w-[180px]
-                                       text-center
-                                       px-6
-                                       py-4
-                                       rounded-xl
-                                       border
-                                       border-white
-                                       text-white
-                                       font-semibold
-                                       hover:bg-white
-                                       hover:text-[#002868]
-                                       transition">
-
-                                Request Information
-
-                    </button>
-
-                        </div>
-
+                    
                     </div>
 
                 </div>
@@ -1054,7 +993,7 @@ $documents = $listing->files->reject(function ($file) {
     <div class="mt-12 flex justify-center">
 
         <a
-            href="{{ route('home') }}#listings"
+            href="{{ route('listings') }}#listings"
             class="inline-flex items-center gap-3
                    px-6
                    py-3
@@ -1086,7 +1025,7 @@ $documents = $listing->files->reject(function ($file) {
                w-full max-w-2xl
                shadow-2xl">
 
-        <div class="flex justify-between items-center p-4 border-b">
+        <div class="flex justify-between items-center p-4 border-b -mb-6">
 
             <h2 class="text-2xl font-bold">
 
@@ -1106,7 +1045,7 @@ $documents = $listing->files->reject(function ($file) {
 
         <form
             method="POST"
-            class="p-5 space-y-3">
+            class="p-10 space-y-3">
 
             @csrf
 
@@ -1114,58 +1053,6 @@ $documents = $listing->files->reject(function ($file) {
                 type="hidden"
                 name="listing_id"
                 value="{{ $listing->id }}">
-
-            <div>
-
-                <label class="font-medium">
-
-                    Business
-
-                </label>
-
-                <input
-                    type="text"
-                    value="{{ $listing->title }}"
-                    readonly
-                    class="w-full mt-1 border rounded-lg px-4 py-2 bg-gray-100">
-
-            </div>
-
-            <div class="grid md:grid-cols-2 gap-4">
-
-                <div>
-
-                    <label class="font-medium">
-
-                        Category
-
-                    </label>
-
-                    <input
-                        type="text"
-                        value="{{ $listing->category->name }}"
-                        readonly
-                        class="w-full mt-1 border rounded-lg px-4 py-2 bg-gray-100">
-
-                </div>
-
-                <div>
-
-                    <label class="font-medium">
-
-                        Asking Price
-
-                    </label>
-
-                    <input
-                        type="text"
-                        value="${{ number_format($listing->price) }}"
-                        readonly
-                        class="w-full mt-1 border rounded-lg px-4 py-2 bg-gray-100">
-
-                </div>
-
-            </div>
 
             <div>
 
@@ -1209,7 +1096,8 @@ $documents = $listing->files->reject(function ($file) {
                 <textarea
                     name="message"
                     rows="3"
-                    class="w-full border rounded-lg px-4 py-2 mt-1">I'm interested in "{{ $listing->title }}". Please provide more information.</textarea>
+                    class="w-full border rounded-lg px-4 py-2 mt-1">
+                </textarea>
 
             </div>
 

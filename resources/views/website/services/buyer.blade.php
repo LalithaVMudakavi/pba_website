@@ -2,7 +2,7 @@
 
 @section('content')
 
-<section class="pt-36 pb-24 bg-gradient-to-b from-white via-gray-50 to-white">
+<section class="pt-20 pb-24 bg-gradient-to-b from-white via-gray-50 to-white">
 
 <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
@@ -34,11 +34,13 @@
 
         </svg>
 
-        <span class="text-gray-400">
+        <a
+            href="{{ route('services') }}"
+            class="hover:text-[#002868] transition">
 
             Services
 
-        </span>
+        </a>
 
         <svg xmlns="http://www.w3.org/2000/svg"
              class="w-4 h-4 mx-2"
@@ -102,7 +104,7 @@
 
         </div>
 
-        <div class="relative z-10 px-10 py-12 lg:px-20">
+        <div class="relative z-10 px-10 py-20 lg:px-20">
 
             <span
                 class="inline-flex px-4 py-2 rounded-full
@@ -129,7 +131,7 @@
             </h1>
 
             <p
-                class="mt-4
+                class="mt-6
                        max-w-3xl
                        text-lg
                        text-white/80
@@ -142,6 +144,35 @@
 
             </p>
 
+            <div
+                class="mt-10 flex flex-wrap gap-4">
+
+                <a
+                    href="{{ route('contact') }}"
+                    class="px-7 py-4 rounded-xl
+                           bg-[#BF0A30]
+                           hover:bg-[#a00828]
+                           text-white
+                           font-semibold">
+
+                    Contact Advisor
+
+                </a>
+
+                <a
+                    href="{{ route('listings') }}"
+                    class="px-7 py-4 rounded-xl
+                           border
+                           border-white/30
+                           text-white
+                           hover:bg-white/10">
+
+                    View Businesses
+
+                </a>
+
+            </div>
+
         </div>
 
     </div>
@@ -150,7 +181,7 @@
     <!-- About -->
     <!-- ========================================= -->
 
-    <div class="mt-20">
+    <div class="mt-24">
 
         <div class="text-center max-w-3xl mx-auto">
 
@@ -166,7 +197,7 @@
             </p>
 
             <h2
-                class="mt-3
+                class="mt-5
                        text-4xl
                        font-serif
                        font-medium
@@ -614,7 +645,6 @@
         </div>
 
     </div>
-
 
         <!-- ========================================= -->
     <!-- Frequently Asked Questions -->

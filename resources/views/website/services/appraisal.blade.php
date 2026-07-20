@@ -4,7 +4,7 @@
 
 @section('content')
 
-<section class="pt-36 pb-24 bg-gradient-to-b from-white via-gray-50 to-white">
+<section class="pt-20 pb-24 bg-gradient-to-b from-white via-gray-50 to-white">
 
 <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
@@ -34,11 +34,13 @@
 
         </svg>
 
-        <span class="text-gray-400">
+           <a
+            href="{{ route('services') }}"
+            class="hover:text-[#002868] transition">
 
             Services
 
-        </span>
+        </a>
 
         <svg xmlns="http://www.w3.org/2000/svg"
              class="w-4 h-4 mx-2"
@@ -101,10 +103,10 @@
 
             </p>
 
-            <!-- <div class="mt-10 flex gap-4">
+            <div class="mt-10 flex gap-4">
 
                 <a
-                    href="{{ route('contact') }}"
+                    href="{{ route('valuation') }}"
                     class="px-8 py-4 rounded-xl
                            bg-[#002868]
                            text-white
@@ -129,7 +131,7 @@
 
                 </a>
 
-            </div> -->
+            </div>
 
         </div>
 
@@ -177,7 +179,7 @@
 
     <!-- What is Appraisal -->
 
-    <div class="mt-20">
+    <div class="mt-36">
 
         <div class="text-center max-w-3xl mx-auto">
 
@@ -891,7 +893,7 @@
                        justify-center gap-5">
 
                 <a
-                    href="{{ route('contact') }}"
+                    href="{{ route('valuation') }}"
                     class="inline-flex items-center justify-center
                            px-8 py-4
                            rounded-xl

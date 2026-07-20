@@ -2,7 +2,7 @@
 
 @section('content')
 
-<section class="pt-36 pb-24 bg-gradient-to-b from-white via-gray-50 to-white">
+<section class="pt-20 pb-24 bg-gradient-to-b from-white via-gray-50 to-white">
 
 <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
@@ -34,11 +34,13 @@
 
         </svg>
 
-        <span class="text-gray-400">
+         <a
+            href="{{ route('services') }}"
+            class="hover:text-[#002868] transition">
 
             Services
 
-        </span>
+        </a>
 
         <svg xmlns="http://www.w3.org/2000/svg"
              class="w-4 h-4 mx-2"
@@ -99,7 +101,7 @@
 
         </div>
 
-        <div class="relative z-10 px-10 py-12 lg:px-20">
+        <div class="relative z-10 px-10 py-20 lg:px-20">
 
             <span
                 class="inline-flex px-4 py-2 rounded-full
@@ -119,7 +121,7 @@
             </h1>
 
             <p
-                class="mt-3 max-w-3xl
+                class="mt-6 max-w-3xl
                        text-lg text-white/80
                        leading-8">
 
@@ -129,7 +131,7 @@
 
             </p>
 
-            <!-- <div class="mt-10 flex flex-wrap gap-4">
+            <div class="mt-10 flex flex-wrap gap-4">
 
                 <a
                     href="{{ route('contact') }}"
@@ -153,7 +155,7 @@
 
                 </a>
 
-            </div> -->
+            </div>
 
         </div>
 
@@ -163,7 +165,7 @@
     <!-- About -->
     <!-- ========================================= -->
 
-    <div class="mt-20">
+    <div class="mt-24">
 
         <div class="text-center max-w-3xl mx-auto">
 
@@ -176,7 +178,7 @@
             </p>
 
             <h2
-                class="mt-3 text-4xl
+                class="mt-5 text-4xl
                        font-serif font-medium
                        text-[#081628]">
 
@@ -349,7 +351,8 @@
         </div>
 
         <!-- Timeline Starts Here -->
-                 <div class="mt-16 relative">
+
+                <div class="mt-16 relative">
 
             <!-- Center Line -->
 
@@ -597,6 +600,143 @@
 
     </div>
 
+    <!-- ========================================= -->
+    <!-- Why Choose Patriot -->
+    <!-- ========================================= -->
+
+    <div class="mt-32">
+
+        <div class="text-center max-w-3xl mx-auto">
+
+            <p
+                class="text-sm uppercase tracking-[0.25em]
+                       text-[#BF0A30] font-semibold">
+
+                Why Choose Patriot?
+
+            </p>
+
+            <h2
+                class="mt-5 text-4xl
+                       font-serif font-medium
+                       text-[#081628]">
+
+                Why Business Owners Trust Us
+
+            </h2>
+
+            <p
+                class="mt-6 text-lg leading-8 text-gray-600">
+
+                Our experience, nationwide reach and commitment to
+                confidentiality help business owners achieve
+                successful transactions with confidence.
+
+            </p>
+
+        </div>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mt-16">
+
+            <!-- Card -->
+
+            <div class="bg-white border rounded-2xl p-8 text-center hover:border-[#002868] transition">
+
+                <div class="text-5xl font-serif font-medium text-[#002868]">
+
+                    40
+
+                </div>
+
+                <h3 class="mt-5 font-semibold text-[#081628]">
+
+                    States Served
+
+                </h3>
+
+                <p class="mt-3 text-gray-600">
+
+                    Business brokerage services across forty states.
+
+                </p>
+
+            </div>
+
+            <!-- Card -->
+
+            <div class="bg-white border rounded-2xl p-8 text-center hover:border-[#002868] transition">
+
+                <div class="text-5xl font-serif font-medium text-[#002868]">
+
+                    18+
+
+                </div>
+
+                <h3 class="mt-5 font-semibold text-[#081628]">
+
+                    Years Experience
+
+                </h3>
+
+                <p class="mt-3 text-gray-600">
+
+                    Extensive expertise in business sales and mergers.
+
+                </p>
+
+            </div>
+
+            <!-- Card -->
+
+            <div class="bg-white border rounded-2xl p-8 text-center hover:border-[#002868] transition">
+
+                <div class="text-5xl font-serif font-medium text-[#002868]">
+
+                    100%
+
+                </div>
+
+                <h3 class="mt-5 font-semibold text-[#081628]">
+
+                    Confidential
+
+                </h3>
+
+                <p class="mt-3 text-gray-600">
+
+                    Every transaction is handled with complete discretion.
+
+                </p>
+
+            </div>
+
+            <!-- Card -->
+
+            <div class="bg-white border rounded-2xl p-8 text-center hover:border-[#002868] transition">
+
+                <div class="text-5xl font-serif font-medium text-[#002868]">
+
+                    ★
+
+                </div>
+
+                <h3 class="mt-5 font-semibold text-[#081628]">
+
+                    Maximum Value
+
+                </h3>
+
+                <p class="mt-3 text-gray-600">
+
+                    Our goal is to secure the highest possible value for your business.
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
 
         <!-- ========================================= -->
     <!-- Frequently Asked Questions -->

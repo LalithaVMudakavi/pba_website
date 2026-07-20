@@ -12,7 +12,7 @@
 
 </head>
 
-<body class="bg-white">
+<body class="bg-white font-sans sans-serif">
 
     @include('layouts.navigation')
 

@@ -2,12 +2,6 @@
 
 @section('content')
 
-@include('website.hero')
-
-@include('website.whychoosepba')
-
-@include('website.process.index')
-
 @include('website.testimonials.index')
 
 @endsection

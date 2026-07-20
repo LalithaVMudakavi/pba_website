@@ -99,13 +99,13 @@
 
                 <ul class="space-y-3">
 
-                    <li><a href="#services" class="text-sm text-white/60 hover:text-white transition-colors">Buyer Mandate</a></li>
+                    <li><a href="{{ route('services.buyer') }}" class="text-sm text-white/60 hover:text-white transition-colors">Buyer Mandate</a></li>
 
-                    <li><a href="#services" class="text-sm text-white/60 hover:text-white transition-colors">Seller Mandate</a></li>
+                    <li><a href="{{ route('services.seller') }}" class="text-sm text-white/60 hover:text-white transition-colors">Seller Mandate</a></li>
 
-                    <li><a href="#services" class="text-sm text-white/60 hover:text-white transition-colors">Business Appraisals</a></li>
+                    <li><a href="{{ route('services.appraisal') }}" class="text-sm text-white/60 hover:text-white transition-colors">Business Appraisals</a></li>
 
-                    <li><a href="#listings" class="text-sm text-white/60 hover:text-white transition-colors">Business Listings</a></li>
+                    <li><a href="{{ route('listings') }}" class="text-sm text-white/60 hover:text-white transition-colors">Business Listings</a></li>
 
                 </ul>
 
@@ -120,14 +120,15 @@
                 </h3>
 
                 <ul class="space-y-3">
+                      <li><a  href="{{ route('home') }}" class="text-sm text-white/60 hover:text-white transition-colors">Home</a></li>
 
-                    <li><a href="#about" class="text-sm text-white/60 hover:text-white transition-colors">About Us</a></li>
+                    <li><a href="{{ route('about') }}" class="text-sm text-white/60 hover:text-white transition-colors">About Us</a></li>
 
-                    <li><a href="#process" class="text-sm text-white/60 hover:text-white transition-colors">Our Process</a></li>
+                    <li><a href="{{ route('process') }}" class="text-sm text-white/60 hover:text-white transition-colors">Our Process</a></li>
 
-                    <li><a href="#testimonials" class="text-sm text-white/60 hover:text-white transition-colors">Testimonials</a></li>
+                    <li><a href="{{ route('testimonials') }}" class="text-sm text-white/60 hover:text-white transition-colors">Testimonials</a></li>
 
-                    <li><a href="#contact" class="text-sm text-white/60 hover:text-white transition-colors">Contact</a></li>
+                    <li><a href="{{ route('contact') }}" class="text-sm text-white/60 hover:text-white transition-colors">Contact</a></li>
 
                 </ul>
 
@@ -143,7 +144,7 @@
 
                 <ul class="space-y-3">
 
-                    <li><a href="#valuation" class="text-sm text-white/60 hover:text-white transition-colors">Business Valuation</a></li>
+                    <li><a href="{{ route('valuation') }}" class="text-sm text-white/60 hover:text-white transition-colors">Business Valuation</a></li>
 
                     <li><a href="#" class="text-sm text-white/60 hover:text-white transition-colors">FAQ</a></li>
 
