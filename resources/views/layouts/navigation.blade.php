@@ -113,14 +113,14 @@
                     Login
 
                 </a>
-
+<!-- 
                 <a
                     href="{{ route('register') }}"
                     class="inline-flex items-center justify-center h-10 px-5 rounded-lg bg-[#BF0A30] hover:bg-[#a00828] text-white shadow-lg shadow-[#BF0A30]/20 transition">
 
                     Sign Up
 
-                </a>
+                </a> -->
 
             @endguest
 
